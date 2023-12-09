@@ -23,8 +23,6 @@
 </br>
     <p><img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=taijulsir&theme=monokai" alt="Profile Details"></p>
   </br>
-    <p><img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=taijulsir&theme=monokai" alt="Repos per Language"> <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=taijulsir&theme=monokai" alt="Most Commit Language"></p>
-   </br>
     <p><img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=taijulsir&theme=monokai" alt="Stats"> <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=taijulsir&theme=monokai&utcOffset=8" alt="Productive Time"></p>
 </div>
 
