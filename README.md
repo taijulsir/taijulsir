@@ -30,7 +30,18 @@
 
 <br />
 
-[<p align="center"><img height="75" src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/Linkedin.png">](https://www.linkedin.com/in/taijulislammd/)[<img height="75" src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/Facebook.png">](https://www.facebook.com/taijulislam41/)[<img height="75" src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/Twitter.png"> </p>](https://twitter.com/taijulislam41)
+<p align="center">
+    <a href="https://www.linkedin.com/in/taijulislammd/" target="_blank">
+        <img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.facebook.com/taijulislam41/" target="_blank">
+        <img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com/taijulislam41" target="_blank">
+        <img height="75" src="https://i.ibb.co/mGc2n4Y/Twitter.png" alt="Twitter">
+    </a>
+</p>
+
 
 <br />
 
