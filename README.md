@@ -4,6 +4,18 @@
 
 ## 🎯 Objective
 I specialize in web development, utilizing HTML, CSS, and JavaScript to create interactive and visually appealing user interfaces. My expertise extends to React for building dynamic web applications. I work with MongoDB and Firebase for effective data management and serverless application development, ensuring seamless and efficient online experiences.
+
+## 📋 Current Overview
+
+- 🌱 I’m currently learning - Next.js to build dynamic React applications
+
+- 👯 I’m looking - To collaborate on open source projects
+
+- 🤔 I’m looking for help with Next.js performance and React state management
+
+- 📫 I’m Exploring - Innovative ways to blend design functionality in web development
+
+- ⚡ Fun fact: I find joy in crafting code like poetry, exploring new technologies 📜
   
 ## 📈 Current Stats
 </br>
@@ -48,14 +60,3 @@ I specialize in web development, utilizing HTML, CSS, and JavaScript to create i
 </p>
 <br/>
 
-## 📋 Current Overview
-
-- 🌱 I’m currently learning - Next.js to build dynamic React applications
-
-- 👯 I’m looking - To collaborate on open source projects
-
-- 🤔 I’m looking for help with Next.js performance and React state management
-
-- 📫 I’m Exploring - Innovative ways to blend design functionality in web development
-
-- ⚡ Fun fact: I find joy in crafting code like poetry, exploring new technologies 📜
