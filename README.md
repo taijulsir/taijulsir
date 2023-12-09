@@ -50,17 +50,14 @@
 <p align="center">
 <img src="https://i.ibb.co/wdMtRZT/HTML.png"/>
 <img src="https://i.ibb.co/Vx93ZQt/css.png"/>
+  <img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/tailwind.png"/>
 <img src="https://i.ibb.co/gmX3Mg5/Java-Script.png"/>
-
-</p>
-<p align="center">
 <img src="https://i.ibb.co/XYZggsC/react.png"/>
-<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/tailwind.png"/>
-<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/Bootsrap.png"/>
-<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/firebase.png"/>
 </p>
 <p align="center">
-<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/node.png"/>
+  <img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/firebase.png"/>
+  <img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/node.png"/>
 <img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/express.png"/>
 <img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/mongo.png"/>
-</p><br/>
+</p>
+<br/>
