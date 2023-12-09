@@ -29,7 +29,7 @@
 ## 📬 Reach me out
 <br />
 <p align="center">
-    <a href="https://www.linkedin.com/in/taijulislammd/" target="_blank">
+    <a href="https://www.linkedin.com/in/taijulislammd/" target="_blank" >
         <img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png" alt="LinkedIn">
     </a>    
     <a href="https://twitter.com/taijulislam41" target="_blank">
@@ -39,9 +39,6 @@
         <img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png" alt="Facebook">
     </a>
 </p>
-
-
-
 <br />
 
 ## 💻 Technologies that I know
