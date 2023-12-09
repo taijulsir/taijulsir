@@ -25,11 +25,35 @@
   </br>
     <p><img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=taijulsir&theme=monokai" alt="Stats"> <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=taijulsir&theme=monokai&utcOffset=8" alt="Productive Time"></p>
 </div>
+
 ## 📬 Reach me out
 <br />
-[<p align="center"><img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png">](https://www.linkedin.com/in/taijulislammd/)[<img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png">](https://www.facebook.com/taijulislam41/)[<img height="75" src="https://i.ibb.co/mGc2n4Y/Twitter.png"> </p>](https://twitter.com/taijulislam41)
-<br />
-## 💻 Technologies that I know
-<br />
+<p align="center">
+  [<img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png">](https://www.linkedin.com/in/taijulislammd/)
+  [<img height="75" src="https://i.ibb.co/mGc2n4Y/Twitter.png">](https://twitter.com/taijulislam41/)
+  [<img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png">](https://www.facebook.com/taijulislam41/)
+</p>
+
 
 <br />
+
+## 💻 Technologies that I know
+
+<br>
+<p align="center">
+<img src="https://i.ibb.co/wdMtRZT/HTML.png"/>
+<img src="https://i.ibb.co/Vx93ZQt/css.png"/>
+<img src="https://i.ibb.co/gmX3Mg5/Java-Script.png"/>
+
+</p>
+<p align="center">
+<img src="https://i.ibb.co/XYZggsC/react.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/tailwind.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/Bootsrap.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/firebase.png"/>
+</p>
+<p align="center">
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/node.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/express.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/mongo.png"/>
+</p><br/>
