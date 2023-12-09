@@ -29,10 +29,17 @@
 ## 📬 Reach me out
 <br />
 <p align="center">
-  [<img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png">](https://www.linkedin.com/in/taijulislammd/)
-  [<img height="75" src="https://i.ibb.co/mGc2n4Y/Twitter.png">](https://twitter.com/taijulislam41/)
-  [<img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png">](https://www.facebook.com/taijulislam41/)
+    <a href="https://www.linkedin.com/in/taijulislammd/" target="_blank">
+        <img height="75" src="https://i.ibb.co/1QxgvJs/Linkedin.png" alt="LinkedIn">
+    </a>    
+    <a href="https://twitter.com/taijulislam41" target="_blank">
+        <img height="75" src="https://i.ibb.co/mGc2n4Y/Twitter.png" alt="Twitter">
+    </a>
+  <a href="https://www.facebook.com/taijulislam41/" target="_blank">
+        <img height="75" src="https://i.ibb.co/9hqqGbw/Facebook.png" alt="Facebook">
+    </a>
 </p>
+
 
 
 <br />
