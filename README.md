@@ -1,6 +1,7 @@
 <a href="https://www.linkedin.com/in/taijulislammd/">
 <img src="https://i.ibb.co/VxtKB7Z/github.png" />
 </a>
+
 ## 📈 Current Stats
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=taijulsir&theme=monokai)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=taijulsir&theme=monokai)
