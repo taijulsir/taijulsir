@@ -1,5 +1,5 @@
 <a href="https://www.linkedin.com/in/taijulsir/">
-<img src="https://ibb.co.com/mrVCcp14" style="width: 100%; height: 100%;  object-fit: cover;" />
+<img src="https://i.postimg.cc/7LDBtT8d/cover.png" style="width: 100%; height: 100%;  object-fit: cover;" />
 </a>
 
 ## 🎯 Objective
