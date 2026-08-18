@@ -22,7 +22,9 @@
   &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/taijulislammd/">LinkedIn</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/taijulsir">GitHub</a>
+  <a href="https://taijul.vercel.app/taijul_islam_resume.pdf">
+  Resume
+</a>
 </p>
 
 </div>
