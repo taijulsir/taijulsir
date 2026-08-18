@@ -1,0 +1,426 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="12%" r="70%">
+      <stop offset="0%" stop-color="#172033" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0b0f19" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#060911" stop-opacity="1"/>
+    </radialGradient>
+    
+    <radialGradient id="orangeGlow" cx="50%" cy="15%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="backendCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2235"/>
+      <stop offset="100%" stop-color="#0f1422"/>
+    </linearGradient>
+
+    <linearGradient id="standardCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131926"/>
+      <stop offset="100%" stop-color="#0c101a"/>
+    </linearGradient>
+
+    <!-- Chip Backgrounds -->
+    <linearGradient id="backendChipBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#243048"/>
+      <stop offset="100%" stop-color="#151c2c"/>
+    </linearGradient>
+
+    <linearGradient id="standardChipBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182030"/>
+      <stop offset="100%" stop-color="#0f1420"/>
+    </linearGradient>
+
+    <!-- Borders -->
+    <linearGradient id="orangeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="backendDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#ea580c" flood-opacity="0.22"/>
+    </filter>
+
+    <filter id="chipDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .layer-title {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .chip-name {
+      font-size: 14.5px;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+    .chip-role {
+      font-size: 10.5px;
+      font-weight: 500;
+      fill: #94a3b8;
+    }
+    .chip-rect {
+      transition: all 0.2s ease;
+    }
+  </style>
+
+  <!-- Outer Background Canvas -->
+  <rect x="1.5" y="1.5" width="877" height="657" rx="18" fill="url(#bgGlow)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="1.5" y="1.5" width="877" height="657" rx="18" fill="url(#orangeGlow)"/>
+
+  <!-- Top Title Header -->
+  <g transform="translate(30, 24)">
+    <rect x="0" y="0" width="176" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="11" cy="11" r="4" fill="#f97316"/>
+    <text x="22" y="14.5" class="font-sans" font-size="9.5" font-weight="800" fill="#cbd5e1" letter-spacing="1">SYSTEM ARCHITECTURE</text>
+
+    <text x="0" y="46" class="font-sans" font-size="21" font-weight="900" fill="#ffffff" letter-spacing="0.5">ENGINEERING STACK</text>
+    <text x="250" y="46" class="font-sans" font-size="21" font-weight="900" fill="#f97316">.</text>
+    
+    <text x="0" y="64" class="font-sans" font-size="12" font-weight="400" fill="#94a3b8">Backend-driven architectural hierarchy designed for high throughput, data integrity, and reliability.</text>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- 1. BACKEND CORE (PRIMARY EMPHASIS - TOP LAYER)          -->
+  <!-- ======================================================= -->
+  <g transform="translate(30, 102)">
+    <!-- Dominant Container with Orange Gradient Border & Glow -->
+    <rect x="0" y="0" width="820" height="128" rx="14" fill="url(#backendCardBg)" stroke="url(#orangeBorder)" stroke-width="1.75" filter="url(#backendDropShadow)"/>
+    
+    <!-- Tier Header -->
+    <g transform="translate(18, 14)">
+      <text x="0" y="11" class="font-sans layer-title" fill="#fb923c">LAYER 01 · BACKEND CORE</text>
+      
+      <!-- Specialization Badge -->
+      <rect x="180" y="-3" width="166" height="18" rx="9" fill="#7c2d12" stroke="#ea580c" stroke-width="1"/>
+      <text x="263" y="9.5" text-anchor="middle" class="font-sans" font-size="9" font-weight="800" fill="#ffedd5" letter-spacing="0.8">PRIMARY SPECIALIZATION</text>
+
+      <text x="784" y="11" text-anchor="end" class="font-sans" font-size="11" font-weight="600" fill="#fdba74">Node.js · TypeScript · APIs</text>
+    </g>
+
+    <!-- 4 Backend Chips: Node.js, TypeScript, Express.js, NestJS -->
+    <!-- Width: 188px, Gap: 10px -> 4 * 188 + 3 * 10 = 752 + 30 = 782px (margin 19px) -->
+
+    <!-- 1. Node.js -->
+    <g transform="translate(19, 40)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="188" height="72" rx="10" fill="url(#backendChipBg)" stroke="#ea580c" stroke-width="1" stroke-opacity="0.9"/>
+      <!-- Icon Wrapper (44x44) -->
+      <rect x="10" y="14" width="44" height="44" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(16, 20)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#539E43" d="M16 2.5l12.5 7.2v14.6L16 31.5 3.5 24.3V9.7L16 2.5z"/>
+          <path fill="#ffffff" d="M16 5.2L5.8 11.1v11.8L16 28.8l10.2-5.9V11.1L16 5.2zm-1.8 17.5c-3.1 0-5-1.5-5-3.8 0-2.4 1.8-3.4 4.5-3.6l2.1-.2v-.8c0-1.1-.7-1.7-2-1.7-1 0-1.7.4-2 1.1l-1.8-.9c.6-1.4 1.9-2.1 3.9-2.1 2.4 0 3.9 1.2 3.9 3.3v6.6h-2v-1.3c-.6.9-1.6 1.4-2.6 1.4zm2.1-4.2l-1.9.2c-1.4.1-2.2.6-2.2 1.7 0 1 .8 1.6 2.1 1.6 1.4 0 2-.9 2-2v-1.5z"/>
+        </svg>
+      </g>
+      <text x="62" y="36" class="font-sans chip-name">Node.js</text>
+      <text x="62" y="52" class="font-sans chip-role">Runtime &amp; V8 Engine</text>
+    </g>
+
+    <!-- 2. TypeScript -->
+    <g transform="translate(217, 40)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="188" height="72" rx="10" fill="url(#backendChipBg)" stroke="#ea580c" stroke-width="1" stroke-opacity="0.9"/>
+      <rect x="10" y="14" width="44" height="44" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(16, 20)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <rect width="32" height="32" rx="6" fill="#3178C6"/>
+          <path fill="#ffffff" d="M18.8 20.6c.4.8 1.1 1.3 2.1 1.3 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6l-.6-.2c-1.8-.8-2.9-1.7-2.9-3.5 0-2.2 1.7-3.7 4.3-3.7 1.9 0 3.2.7 4 2.1l-1.9 1.2c-.4-.7-1-1.1-1.9-1.1-.9 0-1.5.5-1.5 1.1 0 .7.6 1 1.6 1.4l.6.3c2.1.9 3.2 1.8 3.2 3.8 0 2.4-1.8 3.8-4.6 3.8-2.3 0-3.9-.9-4.7-2.5l2.4-1.2zM7.2 13.9h8.2v2.3h-2.9v9.6H9.9v-9.6H7.2v-2.3z"/>
+        </svg>
+      </g>
+      <text x="62" y="36" class="font-sans chip-name">TypeScript</text>
+      <text x="62" y="52" class="font-sans chip-role">Type-Safe Architecture</text>
+    </g>
+
+    <!-- 3. Express.js -->
+    <g transform="translate(415, 40)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="188" height="72" rx="10" fill="url(#backendChipBg)" stroke="#ea580c" stroke-width="1" stroke-opacity="0.9"/>
+      <rect x="10" y="14" width="44" height="44" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(16, 20)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="15" fill="#1e293b"/>
+          <text x="16" y="21.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">ex</text>
+        </svg>
+      </g>
+      <text x="62" y="36" class="font-sans chip-name">Express.js</text>
+      <text x="62" y="52" class="font-sans chip-role">REST &amp; Middleware</text>
+    </g>
+
+    <!-- 4. NestJS -->
+    <g transform="translate(613, 40)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="188" height="72" rx="10" fill="url(#backendChipBg)" stroke="#ea580c" stroke-width="1" stroke-opacity="0.9"/>
+      <rect x="10" y="14" width="44" height="44" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <g transform="translate(16, 20)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#E0234E" d="M16 2.4c-7.5 0-13.6 6.1-13.6 13.6 0 2.8.8 5.4 2.3 7.6L16 2.4z"/>
+          <path fill="#E0234E" d="M27.3 23.6C28.8 21.4 29.6 18.8 29.6 16c0-7.5-6.1-13.6-13.6-13.6L27.3 23.6z" opacity="0.9"/>
+          <path fill="#EA2857" d="M16 29.6c4.2 0 7.9-1.9 10.4-4.9L16 2.4 5.6 24.7c2.5 3 6.2 4.9 10.4 4.9z"/>
+          <circle cx="16" cy="18" r="3.5" fill="#ffffff"/>
+        </svg>
+      </g>
+      <text x="62" y="36" class="font-sans chip-name">NestJS</text>
+      <text x="62" y="52" class="font-sans chip-role">Modular Backend</text>
+    </g>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- 2. DATA & STORAGE (TIER 02)                             -->
+  <!-- ======================================================= -->
+  <g transform="translate(30, 244)">
+    <rect x="0" y="0" width="820" height="122" rx="14" fill="url(#standardCardBg)" stroke="#1e293b" stroke-width="1.25"/>
+    
+    <!-- Header -->
+    <g transform="translate(18, 14)">
+      <text x="0" y="11" class="font-sans layer-title" fill="#38bdf8">LAYER 02 · DATA &amp; STORAGE</text>
+      <rect x="174" y="-3" width="138" height="18" rx="9" fill="#0c4a6e" stroke="#0284c7" stroke-width="1"/>
+      <text x="243" y="9.5" text-anchor="middle" class="font-sans" font-size="9" font-weight="800" fill="#e0f2fe" letter-spacing="0.8">PERSISTENCE &amp; CACHE</text>
+      <text x="784" y="11" text-anchor="end" class="font-sans" font-size="11" font-weight="500" fill="#94a3b8">Relational · NoSQL · In-Memory</text>
+    </g>
+
+    <!-- 5 Chips: PostgreSQL, MongoDB, MySQL, Redis, Prisma -->
+    <!-- Width: 150px, Gap: 8px -> 5 * 150 + 4 * 8 = 750 + 32 = 782px (margin 19px) -->
+
+    <!-- PostgreSQL -->
+    <g transform="translate(19, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#336791" d="M16 2.5c-7.4 0-13.5 6-13.5 13.5 0 7.4 6 13.5 13.5 13.5s13.5-6 13.5-13.5c0-7.4-6-13.5-13.5-13.5z"/>
+          <path fill="#ffffff" d="M16.5 8c-3.5 0-5.5 2-5.5 5 0 2 1 3.5 2.5 4.5v5.5h2v-4.5c2-.5 4-2 4-5.5 0-3-1.5-5-3-5zm-.5 7c-1.5 0-2.5-1-2.5-2.5s1-2.5 2.5-2.5 2.5 1 2.5 2.5-1 2.5-2.5 2.5z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">PostgreSQL</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Primary RDBMS</text>
+    </g>
+
+    <!-- MongoDB -->
+    <g transform="translate(177, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#00ED64" d="M16 2.5C16 2.5 9 10.5 9 18c0 4.2 3.1 7.5 7 7.5s7-3.3 7-7.5c0-7.5-7-15.5-7-15.5z"/>
+          <path fill="#00684A" d="M16 2.5v23c3.9 0 7-3.3 7-7.5 0-7.5-7-15.5-7-15.5z"/>
+          <path fill="#ffffff" d="M16 27v3c0 .5-.4 1-1 1s-1-.5-1-1v-3h2z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">MongoDB</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Document Store</text>
+    </g>
+
+    <!-- MySQL -->
+    <g transform="translate(335, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <rect width="32" height="32" rx="6" fill="#00758F"/>
+          <path fill="#F29111" d="M22.5 12c-2.8-3.2-6.5-4-9.5-2.5-2 1-3.5 3-4 5.5-.3 1.5 0 3 .8 4.2l1.2-1c-.5-.9-.7-2-.5-3 .4-1.8 1.5-3.3 3-4 2.2-1.1 5-.5 7.1 1.8l1.9-1z"/>
+          <text x="16" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="900" fill="#ffffff" text-anchor="middle">SQL</text>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">MySQL</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Relational Store</text>
+    </g>
+
+    <!-- Redis -->
+    <g transform="translate(493, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#DC382D" d="M16 3l12 6-12 6-12-6 12-6z"/>
+          <path fill="#A3241C" d="M4 11l12 6v12L4 23V11z"/>
+          <path fill="#B82B23" d="M28 11l-12 6v12l12-6V11z"/>
+          <circle cx="16" cy="9" r="1.5" fill="#ffffff"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Redis</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Cache &amp; Queues</text>
+    </g>
+
+    <!-- Prisma -->
+    <g transform="translate(651, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#5A67D8" d="M19.8 3.2L6.5 22.8c-.6.9 0 2.2 1.1 2.2h18.8c1.1 0 1.8-1.2 1.1-2.2L22.2 3.2c-.5-.8-1.8-.8-2.4 0z"/>
+          <path fill="#ffffff" d="M20.5 5.5l5.5 17.5H8.2L20.5 5.5z" opacity="0.3"/>
+          <path fill="#2D3748" d="M20.5 5.5L8.2 23h12.3V5.5z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Prisma</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Type-Safe ORM</text>
+    </g>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- 3. DEVOPS & INFRASTRUCTURE (TIER 03)                    -->
+  <!-- ======================================================= -->
+  <g transform="translate(30, 380)">
+    <rect x="0" y="0" width="820" height="122" rx="14" fill="url(#standardCardBg)" stroke="#1e293b" stroke-width="1.25"/>
+    
+    <!-- Header -->
+    <g transform="translate(18, 14)">
+      <text x="0" y="11" class="font-sans layer-title" fill="#34d399">LAYER 03 · DEVOPS &amp; INFRASTRUCTURE</text>
+      <rect x="254" y="-3" width="140" height="18" rx="9" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="324" y="9.5" text-anchor="middle" class="font-sans" font-size="9" font-weight="800" fill="#d1fae5" letter-spacing="0.8">PLATFORM &amp; CI/CD</text>
+      <text x="784" y="11" text-anchor="end" class="font-sans" font-size="11" font-weight="500" fill="#94a3b8">Containers · Linux · Automation</text>
+    </g>
+
+    <!-- 5 Chips: Docker, Linux, Nginx, Git, GitHub -->
+    <!-- Docker -->
+    <g transform="translate(19, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#2496ED" d="M29.5 14.5c-.5-.4-1.6-.6-2.5-.2-.3-.8-1-1.4-1.8-1.7-.8-.4-2-.4-3.1.2-1.2-1.5-3.3-1.8-4.8-1.5-.2-.5-.5-1-1-1.3-.8-.5-1.9-.6-2.8-.2v-2h-3v3H8v3H5v3H2.5c-.8 0-1.5.7-1.5 1.5 0 5.5 3.8 10 9.8 10.7 1.8.2 3.7.2 5.5 0 6-0.7 10.7-4.5 11.7-10.5.8-.3 1.6-.8 1.8-1.5.2-.5.1-1-.3-1.5z"/>
+          <rect x="7" y="10" width="2.5" height="2.5" fill="#ffffff"/>
+          <rect x="10.5" y="10" width="2.5" height="2.5" fill="#ffffff"/>
+          <rect x="14" y="10" width="2.5" height="2.5" fill="#ffffff"/>
+          <rect x="10.5" y="6.5" width="2.5" height="2.5" fill="#ffffff"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Docker</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Container Engine</text>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(177, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="14" fill="#1e293b"/>
+          <ellipse cx="16" cy="18" rx="8" ry="10" fill="#0f172a"/>
+          <ellipse cx="16" cy="19" rx="5.5" ry="7.5" fill="#f8fafc"/>
+          <ellipse cx="16" cy="11" rx="5" ry="5.5" fill="#0f172a"/>
+          <circle cx="14" cy="10.5" r="1" fill="#ffffff"/>
+          <circle cx="18" cy="10.5" r="1" fill="#ffffff"/>
+          <polygon points="14.5,12.5 17.5,12.5 16,14.5" fill="#f59e0b"/>
+          <ellipse cx="12" cy="27" rx="3.5" ry="1.5" fill="#f59e0b"/>
+          <ellipse cx="20" cy="27" rx="3.5" ry="1.5" fill="#f59e0b"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Linux</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Server OS &amp; CLI</text>
+    </g>
+
+    <!-- Nginx -->
+    <g transform="translate(335, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#009639" d="M16 2.5l12.5 7.2v14.6L16 31.5 3.5 24.3V9.7L16 2.5z"/>
+          <path fill="#ffffff" d="M11 9.5h2.8l5.4 8.5v-8.5H22v13h-2.8l-5.4-8.5v8.5H11v-13z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Nginx</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Reverse Proxy</text>
+    </g>
+
+    <!-- Git -->
+    <g transform="translate(493, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#F05032" d="M30.4 14.1L17.9 1.6c-.8-.8-2.1-.8-2.8 0l-2.6 2.6 3.6 3.6c.9-.3 1.9-.1 2.5.6.7.7.9 1.7.5 2.6l3.4 3.4c.9-.4 1.9-.2 2.6.5 1 .1 1 2.7 0 3.8-1 1-2.7 1-3.8 0-.8-.8-.9-1.9-.5-2.8l-3.2-3.2v8.4c.3.2.5.4.7.7 1 1 1 2.7 0 3.8-1 1-2.7 1-3.8 0-1-1-1-2.7 0-3.8.3-.3.6-.5.9-.6V11.8c-.3-.1-.6-.3-.9-.6-.8-.8-.9-1.9-.5-2.8L7.9 4.8 1.6 11.1c-.8.8-.8 2.1 0 2.8l12.5 12.5c.8.8 2.1.8 2.8 0l13.5-12.3z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">Git</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">Version Control</text>
+    </g>
+
+    <!-- GitHub -->
+    <g transform="translate(651, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="150" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="9" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(15, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#ffffff" fill-rule="evenodd" d="M16 2C8.3 2 2 8.3 2 16c0 6.2 4 11.4 9.5 13.3.7.1 1-.3 1-.7v-2.5c-3.9.8-4.7-1.9-4.7-1.9-.6-1.6-1.5-2.1-1.5-2.1-1.3-.9.1-.9.1-.9 1.4.1 2.2 1.5 2.2 1.5 1.3 2.1 3.3 1.5 4.1 1.2.1-.9.5-1.5.9-1.9-3.1-.4-6.4-1.6-6.4-7 0-1.5.5-2.8 1.4-3.8-.1-.4-.6-1.8.1-3.7 0 0 1.2-.4 3.9 1.5 1.1-.3 2.3-.5 3.5-.5s2.4.2 3.5.5c2.7-1.8 3.9-1.5 3.9-1.5.7 1.9.3 3.3.1 3.7.9 1 1.4 2.3 1.4 3.8 0 5.4-3.3 6.6-6.4 7 .5.4.9 1.3.9 2.6v3.9c0 .4.3.8 1 .7C26 27.4 30 22.2 30 16c0-7.7-6.3-14-14-14z"/>
+        </svg>
+      </g>
+      <text x="58" y="32" class="font-sans" font-size="13" font-weight="700" fill="#f8fafc">GitHub</text>
+      <text x="58" y="47" class="font-sans" font-size="9.5" font-weight="500" fill="#94a3b8">CI/CD Workflows</text>
+    </g>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- 4. FRONTEND (TIER 04 - BASE SUPPORT)                   -->
+  <!-- ======================================================= -->
+  <g transform="translate(100, 516)">
+    <!-- Layered pyramid width: 680px width, centered (100px margin) -->
+    <rect x="0" y="0" width="680" height="122" rx="14" fill="url(#standardCardBg)" stroke="#1e293b" stroke-width="1.25"/>
+    
+    <!-- Header -->
+    <g transform="translate(18, 14)">
+      <text x="0" y="11" class="font-sans layer-title" fill="#a78bfa">LAYER 04 · FRONTEND SUPPORT</text>
+      <rect x="184" y="-3" width="136" height="18" rx="9" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+      <text x="252" y="9.5" text-anchor="middle" class="font-sans" font-size="9" font-weight="800" fill="#ede9fe" letter-spacing="0.8">CLIENT INTEGRATION</text>
+      <text x="644" y="11" text-anchor="end" class="font-sans" font-size="11" font-weight="500" fill="#94a3b8">Modern UI &amp; Styling</text>
+    </g>
+
+    <!-- 3 Chips: Next.js, React, Tailwind CSS -->
+    <!-- Width: 202px, Gap: 16px -> 3 * 202 + 2 * 16 = 606 + 32 = 638px (margin 21px) -->
+
+    <!-- Next.js -->
+    <g transform="translate(21, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="202" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="10" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(16, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="15" fill="#000000" stroke="#334155" stroke-width="1"/>
+          <path fill="#ffffff" d="M22.5 22.8l-8.2-11.4h-2.3v11.4h2v-8.2l7.1 9.9c.5-.5 1-1.1 1.4-1.7zm.5-8.8h2v7.2h-2z"/>
+        </svg>
+      </g>
+      <text x="64" y="32" class="font-sans" font-size="13.5" font-weight="700" fill="#f8fafc">Next.js</text>
+      <text x="64" y="48" class="font-sans" font-size="10" font-weight="500" fill="#94a3b8">SSR &amp; Fullstack Web</text>
+    </g>
+
+    <!-- React -->
+    <g transform="translate(239, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="202" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="10" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(16, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="2.8" fill="#61DAFB"/>
+          <g stroke="#61DAFB" stroke-width="1.2" fill="none">
+            <ellipse cx="16" cy="16" rx="12" ry="4.5"/>
+            <ellipse cx="16" cy="16" rx="12" ry="4.5" transform="rotate(60 16 16)"/>
+            <ellipse cx="16" cy="16" rx="12" ry="4.5" transform="rotate(120 16 16)"/>
+          </g>
+        </svg>
+      </g>
+      <text x="64" y="32" class="font-sans" font-size="13.5" font-weight="700" fill="#f8fafc">React</text>
+      <text x="64" y="48" class="font-sans" font-size="10" font-weight="500" fill="#94a3b8">Component UI Library</text>
+    </g>
+
+    <!-- Tailwind CSS -->
+    <g transform="translate(457, 39)" filter="url(#chipDropShadow)">
+      <rect x="0" y="0" width="202" height="66" rx="9" fill="url(#standardChipBg)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="10" y="11" width="44" height="44" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(16, 17)">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#38BDF8" d="M9 13.5c1.5-2.5 3.5-3.5 6-3 1.8.4 3 1.6 4.4 3 2.2 2.3 4.8 5 10.1 5 1.5 0 3.5-1 6-3-1.5 2.5-3.5 3.5-6 3-1.8-.4-3-1.6-4.4-3-2.2-2.3-4.8-5-10.1-5-1.5 0-3.5 1-6 3zm-6 8c1.5-2.5 3.5-3.5 6-3 1.8.4 3 1.6 4.4 3 2.2 2.3 4.8 5 10.1 5 1.5 0 3.5-1 6-3-1.5 2.5-3.5 3.5-6 3-1.8-.4-3-1.6-4.4-3-2.2-2.3-4.8-5-10.1-5-1.5 0-3.5 1-6 3z"/>
+        </svg>
+      </g>
+      <text x="64" y="32" class="font-sans" font-size="13.5" font-weight="700" fill="#f8fafc">Tailwind CSS</text>
+      <text x="64" y="48" class="font-sans" font-size="10" font-weight="500" fill="#94a3b8">Utility Design System</text>
+    </g>
+  </g>
+</svg>

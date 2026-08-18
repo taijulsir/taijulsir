@@ -41,46 +41,16 @@ I enjoy working on systems where reliability, data integrity, security, and clea
 
 ---
 
-## 🧰 Tech Stack
-
-### Backend
+## 🛠️ Engineering Stack
 
 <div align="center">
-  <img
-    src="https://skillicons.dev/icons?i=nodejs,ts,express,nestjs&perline=4"
-    height="55"
-    alt="Backend technologies"
-  />
-</div>
 
-### Databases & Storage
+<img
+  src="./assets/engineering-stack.svg"
+  width="100%"
+  alt="Md Taijul Islam - Engineering Stack Hierarchy"
+/>
 
-<div align="center">
-  <img
-    src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,prisma&perline=5"
-    height="55"
-    alt="Database technologies"
-  />
-</div>
-
-### DevOps & Tools
-
-<div align="center">
-  <img
-    src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github&perline=5"
-    height="55"
-    alt="DevOps and tools"
-  />
-</div>
-
-### Frontend
-
-<div align="center">
-  <img
-    src="https://skillicons.dev/icons?i=nextjs,react,tailwind&perline=3"
-    height="55"
-    alt="Frontend technologies"
-  />
 </div>
 
 ---
