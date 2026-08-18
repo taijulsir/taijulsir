@@ -1,99 +1,163 @@
-# Hi, I'm Md Taijul Islam 👋
+<a href="https://taijul.vercel.app">
+  <img src="https://i.postimg.cc/7LDBtT8d/cover.png" width="100%" alt="Md Taijul Islam - Backend Developer" />
+</a>
 
-### Backend Developer · Node.js · TypeScript
+<h1 align="center">Md Taijul Islam</h1>
 
-I build production-oriented backend systems, APIs, business workflows, and automation platforms with a strong focus on reliability, security, and maintainability.
+<p align="center">
+  <strong>Backend Developer · Node.js · TypeScript · NestJS</strong>
+</p>
 
-### What I Work With
+<p align="center">
+  Building production-oriented APIs, backend systems, business workflows,
+  and automation platforms with a focus on reliability, security, and maintainability.
+</p>
 
-**Backend**
-Node.js · TypeScript · Express.js · NestJS · REST APIs
+<p align="center">
+  <a href="https://taijul.dev">Portfolio</a>
+  ·
+  <a href="https://www.linkedin.com/in/taijulislammd/">LinkedIn</a>
+  ·
+  <a href="https://github.com/taijulsir">GitHub</a>
+</p>
 
-**Databases & Storage**
-PostgreSQL · MongoDB · MySQL · Prisma · Redis
+---
 
-**Authentication & Security**
-JWT · Refresh Tokens · Authentication · Authorization · RBAC · API Security
+## 🚀 About Me
 
-**Async & Integrations**
-BullMQ · Background Jobs · Cron Jobs · Webhooks · Third-Party APIs
+I'm a backend-focused developer with professional experience building and maintaining production applications.
 
-**Payments**
-Stripe · SSLCommerz
+My primary focus is **Node.js and TypeScript**, with experience across REST APIs, databases, authentication, payment integrations, asynchronous processing, and deployment.
 
-**DevOps & Infrastructure**
-Docker · Linux · Nginx · DigitalOcean · Git · GitHub
+I enjoy working on systems where reliability, data integrity, security, and clean architecture matter.
 
-**AI & Automation**
-Claude Code · Telegram Bot · GitHub Integrations · OpenAI API · n8n
+---
 
-### Featured Engineering Projects
+## 🧰 Tech Stack
 
-#### AI Controller
+### Backend
 
-An approval-gated AI development automation platform integrating Claude Code, Git/GitHub, and Telegram into a controlled execution pipeline.
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,ts,express,nestjs" height="45" />
+</p>
 
-* TypeScript backend
-* Multi-repository workflows
-* Approval-gated execution
-* Git safety and rollback
-* Repository intelligence and project memory
-* Automated engineering workflows
+### Databases & Storage
 
-🔗 https://github.com/taijulsir/ai-controller
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,prisma" height="45" />
+</p>
 
-#### Multi-Vendor E-Commerce Backend
+### DevOps & Tools
 
-A production-oriented backend system focused on multi-vendor commerce workflows, order processing, payments, inventory and asynchronous processing.
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github" height="45" />
+</p>
 
-🔗 https://github.com/taijulsir/multi-vendor-ecommerce-backend.com
+### Frontend
 
-#### CineTicket
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind" height="45" />
+</p>
 
-A movie ticketing platform with separate backend, consumer application, and admin application.
+---
 
-* Backend API
-* Ticketing workflows
-* Administrative operations
-* Consumer-facing application
+## 🔥 Featured Engineering Projects
 
-🔗 Backend: https://github.com/taijulsir/cineticket-backend
-🔗 App: https://github.com/taijulsir/cineticket-app
-🔗 Admin: https://github.com/taijulsir/cineticket-admin
+### 🤖 AI Controller
 
-#### Finova
+AI development automation platform integrating Claude Code, Git/GitHub, and Telegram through approval-gated engineering workflows.
 
-A SaaS platform with separate backend, admin, application and landing projects.
+- 52-module TypeScript backend
+- 18 AI-driven workflows
+- Multi-repository planning
+- Transactional Git operations
+- Rollback and recovery
+- Audit logging
+- 48+ Telegram commands
+- Human approval workflows
+- 342 automated tests
 
-🔗 Backend: https://github.com/taijulsir/finova-sass-backend
+🔗 **[View Repository](https://github.com/taijulsir/ai-controller)**
 
-### Production Systems
+---
+
+### 🛒 Multi-Vendor E-Commerce Backend
+
+Production-oriented backend system for multi-vendor commerce workflows.
+
+**Focus:** orders · inventory · payments · authentication · asynchronous processing
+
+🔗 **[View Repository](https://github.com/taijulsir/multi-vendor-ecommerce-backend.com)**
+
+---
+
+### 🎬 CineTicket
+
+Movie ticketing platform with separate backend, consumer application, and administration system.
+
+- Backend API
+- Ticketing workflows
+- Consumer application
+- Admin application
+
+**Repositories**
+
+- [Backend](https://github.com/taijulsir/cineticket-backend)
+- [Consumer App](https://github.com/taijulsir/cineticket-app)
+- [Admin](https://github.com/taijulsir/cineticket-admin)
+
+---
+
+## 🏢 Production Systems
 
 I have also contributed to real production systems across e-commerce, ticketing, restaurant management, and internal platforms.
 
-**Strides Co**
-Production e-commerce platform
-https://www.stridesco.com/
+### Strides Co
 
-**BongOz Films**
-Movie ticketing platform with dynamic seat selection, seat locking, payment and promotional workflows
-https://www.bongozfilms.com/
+Production e-commerce platform.
 
-### Current Focus
+🌐 [Visit Website](https://www.stridesco.com/)
 
-Deepening my expertise in:
+### BongOz Films
 
-* Backend architecture
-* PostgreSQL and data modeling
-* Redis and asynchronous processing
-* NestJS and TypeScript
-* Authentication and API security
-* Production system design
-* AI-assisted engineering automation
+Movie ticketing platform involving dynamic seat selection, seat locking, payments, discounts, and promotional workflows.
 
-### Connect
+🌐 [Visit Website](https://www.bongozfilms.com/)
 
-🌐 Portfolio: https://taijul.dev/
-💼 LinkedIn: https://www.linkedin.com/in/taijulislammd/
-🐙 GitHub: https://github.com/taijulsir/
-📧 Email: [princetaijul123@gmail.com](mailto:princetaijul123@gmail.com)
+---
+
+## 📊 GitHub Statistics
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=taijulsir&show_icons=true&theme=transparent&hide_border=true&rank_icon=github"
+    height="170"
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=taijulsir&layout=compact&theme=transparent&hide_border=true"
+    height="170"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=taijulsir&theme=transparent&hide_border=true"
+    width="70%"
+  />
+</p>
+
+---
+
+## 📈 Engineering Focus
+
+```text
+Backend Architecture
+API Design
+Database Design
+Authentication & RBAC
+Payment Systems
+Async Processing
+Background Jobs
+Webhooks
+Production Deployment
+AI Engineering Automation
