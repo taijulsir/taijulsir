@@ -22,11 +22,11 @@ jobs:
         run: |
           mkdir -p profile
 
-          node <<'EOF'
+          node -e '
           const fs = require("fs");
 
-          async function github(url) {
-            const response = await fetch(url, {
+          async function get(url) {
+            const res = await fetch(url, {
               headers: {
                 Authorization: `Bearer ${process.env.GH_TOKEN}`,
                 Accept: "application/vnd.github+json",
@@ -34,162 +34,175 @@ jobs:
               }
             });
 
-            if (!response.ok) {
-              throw new Error(`${response.status}: ${await response.text()}`);
+            if (!res.ok) {
+              throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
             }
 
-            return response.json();
-          }
-
-          function escape(value) {
-            return String(value)
-              .replace(/&/g, "&amp;")
-              .replace(/</g, "&lt;")
-              .replace(/>/g, "&gt;")
-              .replace(/"/g, "&quot;");
+            return res.json();
           }
 
           async function main() {
             const username = "taijulsir";
 
-            const user = await github(
+            const user = await get(
               `https://api.github.com/users/${username}`
             );
 
-            const repos = await github(
-              `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`
+            const repos = await get(
+              `https://api.github.com/users/${username}/repos?per_page=100`
             );
 
-            const totalStars = repos.reduce(
-              (sum, repo) => sum + repo.stargazers_count,
+            const stars = repos.reduce(
+              (total, repo) => total + repo.stargazers_count,
               0
             );
 
-            const totalForks = repos.reduce(
-              (sum, repo) => sum + repo.forks_count,
+            const forks = repos.reduce(
+              (total, repo) => total + repo.forks_count,
               0
             );
 
-            const publicRepos = user.public_repos;
-            const followers = user.followers;
-            const following = user.following;
-
-            const svg = `
-          <svg width="495" height="180" viewBox="0 0 495 180"
-               xmlns="http://www.w3.org/2000/svg">
-
-            <rect
+            const svg = `<svg
+              xmlns="http://www.w3.org/2000/svg"
               width="495"
               height="180"
-              rx="12"
-              fill="#0d1117"
-              stroke="#30363d"
-            />
+              viewBox="0 0 495 180"
+            >
+              <rect
+                width="495"
+                height="180"
+                rx="12"
+                fill="#0d1117"
+                stroke="#30363d"
+              />
 
-            <text
-              x="25"
-              y="35"
-              fill="#58a6ff"
-              font-family="Arial, sans-serif"
-              font-size="20"
-              font-weight="700">
-              Taijul's GitHub Stats
-            </text>
+              <text
+                x="25"
+                y="38"
+                fill="#f0f6fc"
+                font-family="Arial, sans-serif"
+                font-size="21"
+                font-weight="700"
+              >
+                Taijul's GitHub Stats
+              </text>
 
-            <text
-              x="25"
-              y="75"
-              fill="#8b949e"
-              font-family="Arial, sans-serif"
-              font-size="14">
-              Public Repositories
-            </text>
+              <line
+                x1="25"
+                y1="52"
+                x2="470"
+                y2="52"
+                stroke="#30363d"
+              />
 
-            <text
-              x="25"
-              y="100"
-              fill="#f0f6fc"
-              font-family="Arial, sans-serif"
-              font-size="22"
-              font-weight="700">
-              ${publicRepos}
-            </text>
+              <text
+                x="25"
+                y="82"
+                fill="#8b949e"
+                font-family="Arial, sans-serif"
+                font-size="13"
+              >
+                Public Repositories
+              </text>
 
-            <text
-              x="175"
-              y="75"
-              fill="#8b949e"
-              font-family="Arial, sans-serif"
-              font-size="14">
-              Total Stars
-            </text>
+              <text
+                x="25"
+                y="108"
+                fill="#f0f6fc"
+                font-family="Arial, sans-serif"
+                font-size="22"
+                font-weight="700"
+              >
+                ${user.public_repos}
+              </text>
 
-            <text
-              x="175"
-              y="100"
-              fill="#f0f6fc"
-              font-family="Arial, sans-serif"
-              font-size="22"
-              font-weight="700">
-              ${totalStars}
-            </text>
+              <text
+                x="175"
+                y="82"
+                fill="#8b949e"
+                font-family="Arial, sans-serif"
+                font-size="13"
+              >
+                Total Stars
+              </text>
 
-            <text
-              x="325"
-              y="75"
-              fill="#8b949e"
-              font-family="Arial, sans-serif"
-              font-size="14">
-              Followers
-            </text>
+              <text
+                x="175"
+                y="108"
+                fill="#f0f6fc"
+                font-family="Arial, sans-serif"
+                font-size="22"
+                font-weight="700"
+              >
+                ${stars}
+              </text>
 
-            <text
-              x="325"
-              y="100"
-              fill="#f0f6fc"
-              font-family="Arial, sans-serif"
-              font-size="22"
-              font-weight="700">
-              ${followers}
-            </text>
+              <text
+                x="325"
+                y="82"
+                fill="#8b949e"
+                font-family="Arial, sans-serif"
+                font-size="13"
+              >
+                Followers
+              </text>
 
-            <line
-              x1="25"
-              y1="125"
-              x2="470"
-              y2="125"
-              stroke="#30363d"
-            />
+              <text
+                x="325"
+                y="108"
+                fill="#f0f6fc"
+                font-family="Arial, sans-serif"
+                font-size="22"
+                font-weight="700"
+              >
+                ${user.followers}
+              </text>
 
-            <text
-              x="25"
-              y="150"
-              fill="#8b949e"
-              font-family="Arial, sans-serif"
-              font-size="13">
-              Following: ${following}
-            </text>
+              <line
+                x1="25"
+                y1="130"
+                x2="470"
+                y2="130"
+                stroke="#30363d"
+              />
 
-            <text
-              x="175"
-              y="150"
-              fill="#8b949e"
-              font-family="Arial, sans-serif"
-              font-size="13">
-              Forks: ${totalForks}
-            </text>
+              <text
+                x="25"
+                y="155"
+                fill="#8b949e"
+                font-family="Arial, sans-serif"
+                font-size="13"
+              >
+                Following: ${user.following}
+              </text>
 
-          </svg>
-          `;
+              <text
+                x="175"
+                y="155"
+                fill="#8b949e"
+                font-family="Arial, sans-serif"
+                font-size="13"
+              >
+                Forks: ${forks}
+              </text>
 
-            fs.writeFileSync("profile/stats.svg", svg.trim());
+            </svg>`;
+
+            fs.writeFileSync("profile/stats.svg", svg);
+            console.log("stats.svg generated successfully");
           }
 
           main().catch(error => {
             console.error(error);
             process.exit(1);
           });
-          EOF
+          '
+
+      - name: Verify generated stats
+        run: |
+          test -s profile/stats.svg
+          grep -q "Taijul" profile/stats.svg
+          echo "stats.svg verified successfully"
 
       - name: Commit updated stats
         run: |
@@ -198,6 +211,10 @@ jobs:
 
           git add profile/stats.svg
 
-          git commit -m "Update GitHub profile stats" || exit 0
+          if git diff --cached --quiet; then
+            echo "No stats changes to commit"
+            exit 0
+          fi
 
+          git commit -m "Update GitHub profile stats"
           git push
