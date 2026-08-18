@@ -152,21 +152,33 @@ Movie ticketing platform involving dynamic seat selection, seat locking, payment
 
 <div align="center">
 
-<img
-  src="./profile/stats.svg"
-  height="180"
-  alt="Taijul's GitHub Stats"
-/>
+<a href="https://github.com/taijulsir">
+  <img
+    height="180"
+    src="https://github-readme-stats-fast.vercel.app/api/?username=taijulsir&show_icons=true&theme=transparent&hide_border=true"
+    alt="Taijul's GitHub Stats"
+  />
+</a>
 
-<img
-  src="./profile/top-langs.svg"
-  height="180"
-  alt="Taijul's Top Languages"
-/>
-
-</div>
+<a href="https://github.com/taijulsir">
+  <img
+    height="180"
+    src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=taijulsir&layout=compact&langs_count=8&theme=transparent&hide_border=true"
+    alt="Taijul's Top Languages"
+  />
+</a>
 
 <br />
+
+<a href="https://github.com/taijulsir">
+  <img
+    width="70%"
+    src="https://github-readme-stats-fast.vercel.app/api/streak/?username=taijulsir&theme=transparent&hide_border=true"
+    alt="Taijul's GitHub Streak"
+  />
+</a>
+
+</div>
 
 ---
 
