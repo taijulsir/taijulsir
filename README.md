@@ -1,25 +1,31 @@
+<div align="center">
+
 <a href="https://taijul.vercel.app">
-  <img src="https://i.postimg.cc/7LDBtT8d/cover.png" width="100%" alt="Md Taijul Islam - Backend Developer" />
+  <img
+    src="https://i.postimg.cc/7LDBtT8d/cover.png"
+    alt="Md Taijul Islam - Backend Developer"
+    width="100%"
+  />
 </a>
 
-<h1 align="center">Md Taijul Islam</h1>
+# Md Taijul Islam
 
-<p align="center">
-  <strong>Backend Developer · Node.js · TypeScript · NestJS</strong>
-</p>
+### Backend Developer · Node.js · TypeScript · NestJS
 
-<p align="center">
+<p>
   Building production-oriented APIs, backend systems, business workflows,
   and automation platforms with a focus on reliability, security, and maintainability.
 </p>
 
-<p align="center">
-  <a href="https://taijul.dev">Portfolio</a>
-  ·
+<p>
+  <a href="https://taijul.vercel.app">Portfolio</a>
+  &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/taijulislammd/">LinkedIn</a>
-  ·
+  &nbsp;·&nbsp;
   <a href="https://github.com/taijulsir">GitHub</a>
 </p>
+
+</div>
 
 ---
 
@@ -37,27 +43,43 @@ I enjoy working on systems where reliability, data integrity, security, and clea
 
 ### Backend
 
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,ts,express,nestjs" height="45" />
-</p>
+<div align="center">
+  <img
+    src="https://skillicons.dev/icons?i=nodejs,ts,express,nestjs&perline=4"
+    height="55"
+    alt="Backend technologies"
+  />
+</div>
 
 ### Databases & Storage
 
-<p>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,prisma" height="45" />
-</p>
+<div align="center">
+  <img
+    src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,prisma&perline=5"
+    height="55"
+    alt="Database technologies"
+  />
+</div>
 
 ### DevOps & Tools
 
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github" height="45" />
-</p>
+<div align="center">
+  <img
+    src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github&perline=5"
+    height="55"
+    alt="DevOps and tools"
+  />
+</div>
 
 ### Frontend
 
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind" height="45" />
-</p>
+<div align="center">
+  <img
+    src="https://skillicons.dev/icons?i=nextjs,react,tailwind&perline=3"
+    height="55"
+    alt="Frontend technologies"
+  />
+</div>
 
 ---
 
@@ -77,7 +99,7 @@ AI development automation platform integrating Claude Code, Git/GitHub, and Tele
 - Human approval workflows
 - 342 automated tests
 
-🔗 **[View Repository](https://github.com/taijulsir/ai-controller)**
+**[View Repository →](https://github.com/taijulsir/ai-controller)**
 
 ---
 
@@ -85,9 +107,9 @@ AI development automation platform integrating Claude Code, Git/GitHub, and Tele
 
 Production-oriented backend system for multi-vendor commerce workflows.
 
-**Focus:** orders · inventory · payments · authentication · asynchronous processing
+**Focus:** Orders · Inventory · Payments · Authentication · Async Processing
 
-🔗 **[View Repository](https://github.com/taijulsir/multi-vendor-ecommerce-backend.com)**
+**[View Repository →](https://github.com/taijulsir/multi-vendor-ecommerce-backend.com)**
 
 ---
 
@@ -116,48 +138,111 @@ I have also contributed to real production systems across e-commerce, ticketing,
 
 Production e-commerce platform.
 
-🌐 [Visit Website](https://www.stridesco.com/)
+**[Visit Website →](https://www.stridesco.com/)**
 
 ### BongOz Films
 
 Movie ticketing platform involving dynamic seat selection, seat locking, payments, discounts, and promotional workflows.
 
-🌐 [Visit Website](https://www.bongozfilms.com/)
+**[Visit Website →](https://www.bongozfilms.com/)**
 
 ---
 
 ## 📊 GitHub Statistics
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=taijulsir&show_icons=true&theme=transparent&hide_border=true&rank_icon=github"
-    height="170"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=taijulsir&layout=compact&theme=transparent&hide_border=true"
-    height="170"
-  />
-</p>
+<div align="center">
 
-<p align="center">
+<a href="https://github.com/taijulsir">
   <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=taijulsir&theme=transparent&hide_border=true"
-    width="70%"
+    height="180"
+    src="https://github-readme-stats.vercel.app/api?username=taijulsir&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true"
+    alt="Taijul's GitHub Stats"
   />
-</p>
+</a>
+
+<a href="https://github.com/taijulsir">
+  <img
+    height="180"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=taijulsir&layout=compact&langs_count=8&theme=transparent&hide_border=true"
+    alt="Taijul's Top Languages"
+  />
+</a>
+
+</div>
+
+<br />
+
+<div align="center">
+
+<a href="https://github.com/taijulsir">
+  <img
+    width="70%"
+    src="https://streak-stats.demolab.com?user=taijulsir&theme=transparent&hide_border=true"
+    alt="Taijul's GitHub Streak"
+  />
+</a>
+
+</div>
 
 ---
 
-## 📈 Engineering Focus
+## 🧠 Engineering Focus
 
-```text
-Backend Architecture
-API Design
-Database Design
-Authentication & RBAC
-Payment Systems
-Async Processing
-Background Jobs
-Webhooks
-Production Deployment
-AI Engineering Automation
+<div align="center">
+
+| Backend Architecture | API Design | Database Design |
+| :---: | :---: | :---: |
+| Authentication & RBAC | Async Processing | Payment Systems |
+| Background Jobs | Webhooks | Production Deployment |
+
+</div>
+
+---
+
+## 🎯 Currently Focusing On
+
+- Advanced Node.js internals
+- NestJS
+- PostgreSQL & database design
+- Redis & asynchronous processing
+- Backend architecture
+- Distributed systems fundamentals
+- Production-grade security
+- AI-assisted engineering workflows
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+<a href="https://taijul.vercel.app">
+  <img
+    src="https://img.shields.io/badge/Portfolio-taijul.vercel.app-orange?style=for-the-badge"
+    alt="Portfolio"
+  />
+</a>
+
+<a href="https://www.linkedin.com/in/taijulislammd/">
+  <img
+    src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"
+    alt="LinkedIn"
+  />
+</a>
+
+<a href="mailto:princetaijul123@gmail.com">
+  <img
+    src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"
+    alt="Email"
+  />
+</a>
+
+</div>
+
+<br />
+
+<div align="center">
+
+<i>Building reliable systems, one API at a time.</i>
+
+</div>
