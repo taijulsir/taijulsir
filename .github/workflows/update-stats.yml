@@ -13,29 +13,191 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout profile repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Stats
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=transparent&hide_border=true
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p profile
 
-      - name: Generate Top Languages
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=transparent&hide_border=true
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node <<'EOF'
+          const fs = require("fs");
 
-      - name: Commit generated stats
+          async function github(url) {
+            const response = await fetch(url, {
+              headers: {
+                Authorization: `Bearer ${process.env.GH_TOKEN}`,
+                Accept: "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28"
+              }
+            });
+
+            if (!response.ok) {
+              throw new Error(`${response.status}: ${await response.text()}`);
+            }
+
+            return response.json();
+          }
+
+          function escape(value) {
+            return String(value)
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;");
+          }
+
+          async function main() {
+            const username = "taijulsir";
+
+            const user = await github(
+              `https://api.github.com/users/${username}`
+            );
+
+            const repos = await github(
+              `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`
+            );
+
+            const totalStars = repos.reduce(
+              (sum, repo) => sum + repo.stargazers_count,
+              0
+            );
+
+            const totalForks = repos.reduce(
+              (sum, repo) => sum + repo.forks_count,
+              0
+            );
+
+            const publicRepos = user.public_repos;
+            const followers = user.followers;
+            const following = user.following;
+
+            const svg = `
+          <svg width="495" height="180" viewBox="0 0 495 180"
+               xmlns="http://www.w3.org/2000/svg">
+
+            <rect
+              width="495"
+              height="180"
+              rx="12"
+              fill="#0d1117"
+              stroke="#30363d"
+            />
+
+            <text
+              x="25"
+              y="35"
+              fill="#58a6ff"
+              font-family="Arial, sans-serif"
+              font-size="20"
+              font-weight="700">
+              Taijul's GitHub Stats
+            </text>
+
+            <text
+              x="25"
+              y="75"
+              fill="#8b949e"
+              font-family="Arial, sans-serif"
+              font-size="14">
+              Public Repositories
+            </text>
+
+            <text
+              x="25"
+              y="100"
+              fill="#f0f6fc"
+              font-family="Arial, sans-serif"
+              font-size="22"
+              font-weight="700">
+              ${publicRepos}
+            </text>
+
+            <text
+              x="175"
+              y="75"
+              fill="#8b949e"
+              font-family="Arial, sans-serif"
+              font-size="14">
+              Total Stars
+            </text>
+
+            <text
+              x="175"
+              y="100"
+              fill="#f0f6fc"
+              font-family="Arial, sans-serif"
+              font-size="22"
+              font-weight="700">
+              ${totalStars}
+            </text>
+
+            <text
+              x="325"
+              y="75"
+              fill="#8b949e"
+              font-family="Arial, sans-serif"
+              font-size="14">
+              Followers
+            </text>
+
+            <text
+              x="325"
+              y="100"
+              fill="#f0f6fc"
+              font-family="Arial, sans-serif"
+              font-size="22"
+              font-weight="700">
+              ${followers}
+            </text>
+
+            <line
+              x1="25"
+              y1="125"
+              x2="470"
+              y2="125"
+              stroke="#30363d"
+            />
+
+            <text
+              x="25"
+              y="150"
+              fill="#8b949e"
+              font-family="Arial, sans-serif"
+              font-size="13">
+              Following: ${following}
+            </text>
+
+            <text
+              x="175"
+              y="150"
+              fill="#8b949e"
+              font-family="Arial, sans-serif"
+              font-size="13">
+              Forks: ${totalForks}
+            </text>
+
+          </svg>
+          `;
+
+            fs.writeFileSync("profile/stats.svg", svg.trim());
+          }
+
+          main().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          EOF
+
+      - name: Commit updated stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+
+          git add profile/stats.svg
+
           git commit -m "Update GitHub profile stats" || exit 0
+
           git push
